@@ -1,8 +1,8 @@
 package com.Bridgelabz;
 public class HotelReservationException extends RuntimeException{
 
-    enum ExceptionType{
-        ENTERED_NULL, ENTERED_EMPTY;
+   public enum ExceptionType{
+         ENTERED_EMPTY
     }
 
     ExceptionType type;
