@@ -1,10 +1,10 @@
 package com.Bridgelabz;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.Month;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class HotelReservationTest {
 
@@ -96,7 +96,7 @@ public class HotelReservationTest {
             hotelReservation.getCheapestHotel(startDate, endDate,null);
         }
         catch(HotelReservationException e){
-            Assertions.assertEquals(HotelReservationException.ExceptionType.ENTERED_NULL, e.type);
+            Assertions.assertEquals(HotelReservationException.ExceptionType.ENTERED_EMPTY, e.type);
             e.printStackTrace();
         }
     }
